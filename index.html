@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Żużel - JavaScript Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <div id="menu">
+            <p id="logo">
+                <span style="color: #ed1515;">M</span>
+                <span style="color: #2bd10e;">O</span>
+                <span style="color: #0e96d1;">T</span>
+                <span style="color: #2bd10e;">O</span>
+                <span style="color: #cd15f2;">R</span>
+                <span style="color: #ed1515;">K</span>
+                <span style="color: #0e96d1;">I</span>
+            </p>
+            <p id="playersText">Liczba graczy:</p>
+            <div id="players">
+                <div class="player" onclick="playersChoose(1)" onmouseout="playerMouseOut(1)"
+                    onmouseover="style='color: #ed1515;'">1</div>
+                <div class="player" onclick="playersChoose(2)" onmouseout="playerMouseOut(2)"
+                    onmouseover="style='color: #2bd10e;'">2</div>
+                <div class="player" onclick="playersChoose(3)" onmouseout="playerMouseOut(3)"
+                    onmouseover="style='color: #0e96d1;'">3</div>
+                <div class="player" onclick="playersChoose(4)" onmouseout="playerMouseOut(4)"
+                    onmouseover="style='color: #cd15f2;'">4</div>
+            </div>
+            <div id="controls">
+                <div class="control" onclick="controlsChoose(1)" onmouseout="controlMouseOut(1)"
+                    onmouseover="style='color: #ed1515;display: block;'">z</div>
+                <div class="control" onclick="controlsChoose(2)" onmouseout="controlMouseOut(2)"
+                    onmouseover="style='color: #2bd10e;display: block;'">x</div>
+                <div class="control" onclick="controlsChoose(3)" onmouseout="controlMouseOut(3)"
+                    onmouseover="style='color: #0e96d1;display: block;'">c</div>
+                <div class="control" onclick="controlsChoose(4)" onmouseout="controlMouseOut(4)"
+                    onmouseover="style='color: #cd15f2;display: block;'">v</div>
+            </div>
+            <div id="underControls">
+                <p id="respawn" onclick="respawnRule()" onmouseout="respawnMouseOut()"
+                    onmouseover="style='color: #ed1515;display: block;'">RESPAWN</p>
+                <p id="startButton" onclick="startGame()">START</p>
+                <p id="lapCount">LAPS:5</p>
+            </div>
+            <img src="patterns/fireworks_red.gif" alt="fireworks_red" id="fireworksRed">
+            <img src="patterns/fireworks_green.gif" alt="fireworks_green" id="fireworksGreen">
+            <img src="patterns/fireworks_blue.gif" alt="fireworks_blue" id="fireworksBlue">
+            <img src="patterns/fireworks_violet.gif" alt="fireworks_violet" id="fireworksViolet">
+            <img src="patterns/fireworks_red.gif" alt="fireworks_red" id="fireworksRed2">
+            <img src="patterns/fireworks_green.gif" alt="fireworks_green" id="fireworksGreen2">
+            <img src="patterns/fireworks_blue.gif" alt="fireworks_blue" id="fireworksBlue2">
+            <img src="patterns/fireworks_violet.gif" alt="fireworks_violet" id="fireworksViolet2">
+        </div>
+    </div>
+    <div id="textures">
+        <img src="patterns/dirt_small.jpg" alt="dirt_small" id="dirtSmall">
+        <img src="patterns/grass_small.jpg" alt="grass_small" id="grassSmall">
+        <img src="patterns/finish_small.jpg" alt="finish_small" id="finishSmall">
+        <img src="patterns/motor_red.png" alt="motor_red" id="motorRed">
+        <img src="patterns/motor_green.png" alt="motor_green" id="motorGreen">
+        <img src="patterns/motor_blue.png" alt="motor_blue" id="motorBlue">
+        <img src="patterns/motor_violet.png" alt="motor_violet" id="motorViolet">
+    </div>
+</body>
+
+</html>
